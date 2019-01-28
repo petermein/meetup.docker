@@ -8,7 +8,7 @@ metadata:
 
 data:
   # Laravel
-  APP_ENV:             "local"
+  APP_ENV:             "k8s"
   APP_KEY:             "{{ .Values.appKey }}"
   APP_DEBUG:           "true"
   APP_LOG:             "errorlog"
@@ -16,7 +16,7 @@ data:
   APP_URL:             "http://localhost"
 
   DB_CONNECTION:      sqlite
-  DB_DATABASE:        db/database.sqlite
+  DB_DATABASE:        db/database.
 
   BROADCAST_DRIVER:    "log"
   CACHE_DRIVER:        "file"

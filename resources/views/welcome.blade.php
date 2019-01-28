@@ -83,6 +83,7 @@
                 <div class="title m-b-md">
                     Laravel Meetup
                 </div>
+                <div class="subitle">Hostname: {!! gethostname() !!}</div>
 
                 <ul style="list-style: none">
                 @foreach($messages as $message)

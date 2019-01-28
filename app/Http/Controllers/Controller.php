@@ -13,7 +13,12 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     public function home(){
-        $messages = Message::all();
+        
+        if(app()->environment('local')){
+            $messages = Message::all();
+        } else{
+            $messages = [];
+        }
 
         return view('welcome', compact('messages'));
     }
